@@ -10,7 +10,7 @@ return [
     'host'      => env('MQTT_HOST', '127.0.0.1'),
     'password'  => env('MQTT_PASSWORD', ''),
     'username'  => env('MQTT_USERNAME', ''),
-    'certfile'  => env('MQTT_CERT_FILE', ''),
+    'certfile'  => env('MQTT_CERT_FILE', ''), // should put the ca.crt in source folder and place it with file path, ex: 'certfile' => env('MQTT_CERT_FILE',base_path('ca.crt')),
     'localcert' => env('MQTT_LOCAL_CERT', ''),
     'localpk'   => env('MQTT_LOCAL_PK', ''),
     'port'      => env('MQTT_PORT', '1883'),
